@@ -5,7 +5,10 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\snd_bounce</sound>
+    <sound>sound\snd_game_music</sound>
+    <sound>sound\snd_menu_music</sound>
+    <sound>sound\snd_drop</sound>
+    <sound>sound\snd_drinking</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
@@ -32,6 +35,7 @@
     <object>objects\obj_drop</object>
     <object>objects\obj_score</object>
     <object>objects\obj_debug</object>
+    <object>objects\obj_background_music</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

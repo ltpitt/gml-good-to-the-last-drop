@@ -17,6 +17,7 @@ if (image_xscale == 1.20) {
     timer = 300;
     if (!first_drop) {
         instance_create(x,y,obj_drop) direction=0;
+        audio_play_sound(snd_drop, 10, false);
     }
     first_drop = false;
 }

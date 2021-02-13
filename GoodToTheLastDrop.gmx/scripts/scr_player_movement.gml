@@ -91,7 +91,7 @@ if !(global.game == "over") {
     if place_meeting(x, y, obj_drop) {
         var drop = instance_place(x, y, obj_drop);
         with(drop) {
-            //audio_play_sound(hit_1, 10, false);
+            audio_play_sound(snd_drinking, 10, false);
             instance_destroy();
             score += 1
             if (score == 10) {
