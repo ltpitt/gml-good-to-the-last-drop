@@ -9,6 +9,7 @@
     <sound>sound\snd_menu_music</sound>
     <sound>sound\snd_drop</sound>
     <sound>sound\snd_drinking</sound>
+    <sound>sound\snd_gameover_music</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>

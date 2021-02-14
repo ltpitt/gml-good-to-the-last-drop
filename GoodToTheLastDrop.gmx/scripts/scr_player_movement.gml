@@ -94,9 +94,11 @@ if !(global.game == "over") {
             audio_play_sound(snd_drinking, 10, false);
             instance_destroy();
             score += 1
-            if (score == 10) {
+            if (score == 1) {
                 instance_destroy(spr_cloud);
                 global.game = "over";
+                audio_stop_sound(snd_game_music);
+                audio_play_sound(snd_gameover_music, 10, false);
             }
         }
     }
@@ -108,8 +110,6 @@ if !(global.game == "over") {
     //show_debug_message("clockwise = " + string(clockwise));
     //show_debug_message("x = " + string(x))
     //show_debug_message("game = " + string(global.game))
-
-
 } else {
     original_x = x
     original_y = y
@@ -120,4 +120,6 @@ if !(global.game == "over") {
     image_xscale += 0.001;
     image_yscale += 0.001;
 }
+
+
 
