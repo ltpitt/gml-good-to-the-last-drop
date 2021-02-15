@@ -94,7 +94,7 @@ if !(global.game == "over") {
             audio_play_sound(snd_drinking, 10, false);
             instance_destroy();
             score += 1
-            if (score == 1) {
+            if (score == 10) {
                 instance_destroy(spr_cloud);
                 global.game = "over";
                 audio_stop_sound(snd_game_music);
