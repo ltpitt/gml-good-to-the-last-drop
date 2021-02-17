@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_player_init</script>
+            <script>scr_player_create</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -67,7 +67,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_player_movement</script>
+            <script>scr_player_step</script>
           </argument>
           <argument>
             <kind>0</kind>

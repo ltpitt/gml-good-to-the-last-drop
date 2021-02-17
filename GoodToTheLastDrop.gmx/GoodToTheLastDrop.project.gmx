@@ -12,34 +12,57 @@
     <sound>sound\snd_gameover_music</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_cloud</sprite>
-    <sprite>sprites\spr_drop</sprite>
+    <sprites name="Game">
+      <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_cloud</sprite>
+      <sprite>sprites\spr_drop</sprite>
+    </sprites>
+    <sprites name="Main Menu">
+      <sprite>sprites\spr_menu_play</sprite>
+      <sprite>sprites\spr_menu_options</sprite>
+      <sprite>sprites\spr_menu_exit</sprite>
+      <sprite>sprites\spr_menu_credits</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_player_movement.gml</script>
-    <script>scripts\scr_drop_movement.gml</script>
-    <script>scripts\scr_cloud_movement.gml</script>
-    <script>scripts\scr_cloud_init.gml</script>
-    <script>scripts\scr_player_init.gml</script>
-    <script>scripts\scr_drop_init.gml</script>
+    <scripts name="Game">
+      <script>scripts\scr_player_create.gml</script>
+      <script>scripts\scr_cloud_step.gml</script>
+      <script>scripts\scr_drop_step.gml</script>
+      <script>scripts\scr_cloud_create.gml</script>
+      <script>scripts\scr_drop_create.gml</script>
+      <script>scripts\scr_player_step.gml</script>
+    </scripts>
+    <scripts name="Main Menu">
+      <script>scripts\scr_menu_play_step.gml</script>
+      <script>scripts\scr_menu_play_create.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_player</object>
-    <object>objects\obj_cloud</object>
-    <object>objects\obj_drop</object>
-    <object>objects\obj_score</object>
-    <object>objects\obj_debug</object>
+    <objects name="Game">
+      <object>objects\obj_player</object>
+      <object>objects\obj_score</object>
+      <object>objects\obj_drop</object>
+      <object>objects\obj_cloud</object>
+      <object>objects\obj_debug</object>
+    </objects>
+    <objects name="Main Menu">
+      <object>objects\obj_menu_play</object>
+      <object>objects\obj_menu_options</object>
+      <object>objects\obj_menu_exit</object>
+      <object>objects\obj_menu_credits</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\rm_menu</room>
+    <room>rooms\rm_game</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
