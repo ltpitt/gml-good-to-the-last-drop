@@ -7,8 +7,8 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>16</bbox_left>
-  <bbox_right>248</bbox_right>
+  <bbox_left>9</bbox_left>
+  <bbox_right>255</bbox_right>
   <bbox_top>11</bbox_top>
   <bbox_bottom>107</bbox_bottom>
   <HTile>0</HTile>
@@ -21,5 +21,6 @@
   <height>119</height>
   <frames>
     <frame index="0">images\spr_menu_credits_0.png</frame>
+    <frame index="1">images\spr_menu_credits_1.png</frame>
   </frames>
 </sprite>
