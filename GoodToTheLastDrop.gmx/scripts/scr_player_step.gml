@@ -43,7 +43,9 @@ if !(global.game == "over") {
         // Movement using gamepad digital / analog
         gamepad_set_axis_deadzone(0, 0.5);
         var h_axis_l = gamepad_axis_value(0, gp_axislh)
+        var v_axis_l = gamepad_axis_value(0, gp_axislv)
         var h_axis_r = gamepad_axis_value(0, gp_axisrh)
+        var h_axis_r = gamepad_axis_value(0, gp_axisrv)
         if (gamepad_button_check_pressed(0, gp_padl)) or (h_axis_l < 0) or (h_axis_r < 0) {
             keyboard_key_press(vk_left)
         } else if (gamepad_button_check_pressed(0, gp_padr)) or (h_axis_l > 0) or (h_axis_r > 0) {
@@ -52,7 +54,6 @@ if !(global.game == "over") {
             keyboard_key_release(vk_left);
             keyboard_key_release(vk_right);
         }
-        show_debug_message("h_axis_l = " + string(h_axis_l))
     }
         
     // Player movement
@@ -95,7 +96,7 @@ if !(global.game == "over") {
             instance_destroy();
             score += 1
             if (score == 10) {
-                instance_destroy(spr_cloud);
+                instance_destroy(obj_cloud);
                 global.game = "over";
                 audio_stop_sound(snd_game_music);
                 audio_play_sound(snd_gameover_music, 10, false);
@@ -119,6 +120,12 @@ if !(global.game == "over") {
     original_yscale = image_xscale;
     image_xscale += 0.001;
     image_yscale += 0.001;
+
+    global.end_timeout -= 1;
+    show_debug_message(global.end_timeout);
+    if (global.end_timeout == 0) {
+        room_goto(0);
+    }
 }
 
 
