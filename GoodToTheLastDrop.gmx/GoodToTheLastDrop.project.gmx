@@ -16,6 +16,7 @@
       <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_cloud</sprite>
       <sprite>sprites\spr_drop</sprite>
+      <sprite>sprites\spr_bird</sprite>
     </sprites>
     <sprites name="Main Menu">
       <sprite>sprites\spr_menu_play</sprite>
@@ -31,9 +32,11 @@
   <scripts name="scripts">
     <scripts name="Game">
       <script>scripts\scr_cloud_create.gml</script>
+      <script>scripts\src_bird_create.gml</script>
       <script>scripts\scr_player_create.gml</script>
       <script>scripts\scr_drop_create.gml</script>
       <script>scripts\scr_cloud_step.gml</script>
+      <script>scripts\scr_bird_step.gml</script>
       <script>scripts\scr_drop_step.gml</script>
       <script>scripts\scr_player_step.gml</script>
     </scripts>
@@ -52,6 +55,7 @@
       <object>objects\obj_drop</object>
       <object>objects\obj_cloud</object>
       <object>objects\obj_debug</object>
+      <object>objects\obj_bird</object>
     </objects>
     <objects name="Main Menu">
       <object>objects\obj_menu_play</object>
