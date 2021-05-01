@@ -31,13 +31,13 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Game">
-      <script>scripts\scr_cloud_create.gml</script>
       <script>scripts\src_bird_create.gml</script>
-      <script>scripts\scr_player_create.gml</script>
-      <script>scripts\scr_drop_create.gml</script>
-      <script>scripts\scr_cloud_step.gml</script>
       <script>scripts\scr_bird_step.gml</script>
+      <script>scripts\scr_cloud_create.gml</script>
+      <script>scripts\scr_cloud_step.gml</script>
+      <script>scripts\scr_drop_create.gml</script>
       <script>scripts\scr_drop_step.gml</script>
+      <script>scripts\scr_player_create.gml</script>
       <script>scripts\scr_player_step.gml</script>
     </scripts>
     <scripts name="Main Menu">
