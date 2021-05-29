@@ -66,6 +66,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_menu</room>
+    <room>rooms\rm_options</room>
+    <room>rooms\rm_credits</room>
     <room>rooms\rm_game</room>
   </rooms>
   <help>
