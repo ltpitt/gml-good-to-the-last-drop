@@ -5,7 +5,9 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 
 # gml-good-to-the-last-drop
-A tiny game made in Gamemaker for my little one
+A tiny game made in Gamemaker for my little one.
+It is built with toddlers in mind and the tasks and goals are planned to be simple and not frustrating since there is no possibility to lose but my daughter was really excited and happy to play it, I hope you can share some fun with your little one(s) and enjoy some tweaking maybe changing the sprites / sounds / game behavior.
+Very happy to receive any contribution or ideas, it can be compiled on any platform you have for GameMaker but also for PS Vita (more info [here](https://github.com/KuromeSan/GayMaker)).
 
 ### Contribution guidelines ###
 
