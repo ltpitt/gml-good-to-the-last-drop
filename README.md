@@ -14,7 +14,7 @@ If you want to build the game you will need:
 * [Game Maker 1.4](https://www.yoyogames.com/en)
 
 ### Dependencies ###
-* Clone this repo cloned locally on your pc
+* Clone this repo cloned locally on your pc (using `git clone https://github.com/ltpitt/gml-good-to-the-last-drop` or downloading the zip file and expanding it) 
 
 ### Instructions ###
 * Open Game Maker
